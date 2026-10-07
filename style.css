@@ -1,0 +1,792 @@
+
+
+body{
+    background-image: url("PHOTOS/BackGround\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: rgb(238, 126, 169), rgb(241, 74, 85);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}.header {
+    overflow: hidden;
+    background-color: rgb(245, 130, 216);
+    /*padding: 20px 10px;*/
+  }
+  
+  .header img{
+    height: 50px;
+    width: 50px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: rgb(242, 232, 232);
+    color: rgb(222, 24, 150);
+  }
+  
+  .header a.active {
+    background-color: rgb(191, 9, 91);
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-Right {
+    float: right;
+  }
+
+  .home-photo {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto;
+
+    border-radius: 50px 50px 15px 15px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(120, 100, 100, 0.20);
+}
+
+  .footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(44, 118, 21);
+    color: rgb(193, 233, 211);
+    text-align: center;
+  }
+  #content{
+    color: maroon;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+  }
+
+/* HOME PAGE */
+
+.home {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.home h1 {
+    color: #7e5f5f;
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
+
+/* HOME PHOTO */
+
+.home-photo {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 1px auto 1px auto;
+
+    /* soft photo frame */
+    padding: 8px;
+    background-color: #e9a6c7;
+
+    /* rounded corners */
+    border-radius: 50px 50px 15px 15px;
+
+    /* soft border */
+    border: 1px solid #eadfdb;
+
+    /* subtle shadow */
+    box-shadow:
+        0 5px 15px rgba(120, 100, 100, 0.15),
+        0 10px 25px rgba(180, 150, 150, 0.08);
+}
+
+/* INTRODUCTION */
+
+.home h2 {
+    color: #6f5b5b;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.home-intro {
+    max-width: 700px;
+    margin: 20px auto;
+    color: #776b6b;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* CLOSING MESSAGE */
+
+.home-message {
+    margin-top: 40px;
+}
+
+.home-message p {
+    color: #b18a8a;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+    .home {
+        padding: 40px 5%;
+    }
+
+    .home-photo {
+        width: 250px;
+        height: 330px;
+    }
+
+}
+
+/* =================================
+   PHOTO DESIGN
+   ================================= */
+
+.about-main-photo,
+.about-second-photo {
+    text-align: center;
+    margin: 30px auto 55px auto;
+}
+
+/* PHOTO FRAME */
+
+.photo-frame {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #eadfdb;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(120, 100, 100, 0.12),
+        0 10px 25px rgba(180, 150, 150, 0.08);
+
+    margin: auto;
+}
+
+
+/* FIRST PHOTO */
+
+.portrait-frame {
+    width: 35%;
+    max-width: 900px;
+    height: 650px;
+
+    transform: rotate(-1deg);
+}
+
+
+/* SECOND PHOTO */
+
+.landscape-frame {
+    width: 90%;
+    max-width: 1200px;
+    height: 500px;
+
+    transform: rotate(1deg);
+}
+
+/* ACTUAL IMAGES */
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* =================================
+   PERSONAL DETAILS
+   ================================= */
+
+.personal-details {
+
+    background-color: #ffffff; 
+}
+
+/* SPACING FOR EACH PERSONAL DETAIL */
+
+.details-list li {
+    color: #776b6b;
+    font-size: 20px;
+    padding: 8px 0;
+    line-height: 1.6;
+    border-bottom: 1px solid #f0e7e4;
+}
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details-list li {
+    color: #736161;
+    font-size: 15px;
+    padding: 10px 0;
+
+    border-bottom: 1px solid #f0e4eb;
+}
+
+.details-list li:last-child {
+    border-bottom: none;
+}
+
+.details-list strong {
+    color: #9b7777;
+}
+
+/* =================================
+   A FEW THINGS ABOUT ME
+   ================================= */
+
+.quick-facts {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.quick-facts h2 {
+    color: #6f5b5b;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.fact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fact {
+    background-color: #f5c3db;
+
+    border: 1px solid #e78a97;
+    border-radius: 10px;
+
+    padding: 30px 25px;
+
+    width: 30%;
+
+    box-shadow: 0 4px 10px rgba(120, 100, 100, 0.06);
+}
+
+.fact h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #b18a8a;
+    margin: 0 0 15px 0;
+}
+
+.fact p {
+    color: #776b6b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =================================
+   MOBILE
+   ================================= */
+
+@media screen and (max-width: 700px) {
+
+    .about-page {
+        padding: 40px 5%;
+    }
+
+    .portrait-frame {
+        width: 80%;
+        height: 500px;
+    }
+
+    .landscape-frame {
+        width: 90%;
+        height: 350px;
+    }
+
+    .personal-details {
+        padding: 25px 20px;
+    }
+
+    .fact-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fact {
+        width: auto;
+    }
+
+}
+
+.personal-details {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.personal-details h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #503e3e;
+    margin-bottom: 20px;
+}
+
+.details-list {
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    padding: 20px 35px 20px 45px;
+
+    background-color: #fffafa;
+    border: 2px solid #deb2b2;
+    border-radius: 12px;
+
+    line-height: 2;
+    font-size: 18px;
+}
+
+.details-list li {
+    padding-left: 5px;
+    color: #5c5050;
+}
+
+.details-list li::marker {
+    color: #b88f8f;
+    font-size: 18px;
+}
+
+.details-list strong {
+    color: #9a7272;
+}
+
+
+quick-facts {
+    margin-top: 50px;
+}
+
+.quick-facts h2 {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 32px;
+    font-weight: bold;
+    color: #503e3e;
+    margin-bottom: 20px;
+}
+
+.fact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fact {
+    background-color: #ffffff;
+    border: 2px solid #e6cfc6;
+    border-radius: 10px;
+    padding: 30px 25px;
+    width: 30%;
+    text-align: center;
+}
+
+.fact h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #b18a8a;
+    margin: 0 0 15px 0;
+}
+
+.fact p {
+    color: #776b6b;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+    .fact-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fact {
+        width: 100%;
+    }
+
+}
+
+
+.interests-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.interests-page {
+    padding: 50px 10%;
+}
+
+.interests-page h1 {
+    text-align: center;
+    color: #6f5b5b;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+.interest-intro {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    color: #887979;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.interest-text {
+    max-width: 850px;
+    margin: auto;
+}
+
+.interest-item {
+    background-color: #ffffff;
+    border: 1px solid #eadfdb;
+    border-radius: 12px;
+    padding: 30px 35px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(120, 100, 100, 0.06);
+}
+
+.sticker {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.interest-item h2 {
+    color: #6f5b5b;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+.interest-item p {
+    color: #776b6b;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.interest-item strong {
+    color: #9b7777;
+}
+
+.interest-ending {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.interest-ending p {
+   color: #563636;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .interests-page {
+        padding: 40px 5%;
+    }
+
+    .interest-item {
+        padding: 25px 20px;
+    }
+
+}
+
+/* ENDING */
+
+.interest-ending {
+    text-align: center;
+    margin: 60px 0 20px 0;
+}
+
+.interest-ending p {
+    color: #563636;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .interests-section {
+        width: 92%;
+    }
+
+    .interests-section > h1 {
+        font-size: 32px;
+    }
+
+    .photo-row {
+        flex-direction: column;
+    }
+
+    .photo-row img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .travel-place,
+    .concert {
+        padding: 22px;
+    }
+
+}
+
+
+/* NURSING JOURNEY */
+
+
+.journey-intro {
+    text-align: center;
+    color: #887979;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+
+/* EACH YEAR */
+
+.year-section {
+    background-color: #ffffff;
+    border: 1px solid #eadfdb;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.year-title {
+    margin-bottom: 20px;
+}
+
+.year-title span {
+    color: #ab6f6f;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.year-title h2 {
+    color: #790b3d;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+
+
+/* NURSING PHOTOS */
+
+.year-section img {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+
+/* DESCRIPTION */
+
+.year-section p {
+    max-width: 750px;
+    margin: 25px auto 0 auto;
+    color: #b26868;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* CLOSING QUOTE */
+
+.journey-ending {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.journey-ending p {
+    color: #563636;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+    .nursing-journey {
+        padding: 40px 5%;
+    }
+
+    .year-section {
+        padding: 20px;
+    }
+
+    .year-section img {
+        height: 300px;
+    }
+
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    padding: 50px 10%;
+}
+
+.testimonial-intro {
+    text-align: center;
+    color: #887979;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+
+/* TESTIMONIAL CARDS */
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* EACH CARD */
+
+.testimonial-card {
+    background-color: #f1dde6;
+    border: 1px solid #ebaab6;
+    border-radius: 30px;
+    padding: 25px;
+    width: 40%;
+    text-align: center;
+}
+
+
+/* PERSON'S PHOTO */
+
+.testimonial-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+
+/* NAME */
+
+.testimonial-content h2 {
+    color: #2e2323;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+
+/* RELATIONSHIP */
+
+.testimonial-role {
+    color: #b78383;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+/* TESTIMONIAL TEXT */
+
+.testimonial-content p {
+    color: #776b6b;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+/* CLOSING */
+
+.testimonial-ending {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.testimonial-ending p {
+    color: #563636;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+    .testimonials {
+        padding: 40px 5%;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
